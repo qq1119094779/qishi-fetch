@@ -8,7 +8,7 @@ Fetch for browser.
 ## Install
 
 ```bash
-$ npm isntall reco-fetch
+$ npm isntall qishi-fetch
 ```
 
 ## Including reco-fetch
