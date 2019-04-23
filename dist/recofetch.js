@@ -4,7 +4,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 
 require("whatwg-fetch");
 
@@ -14,7 +14,7 @@ var _timeOut = _interopRequireDefault(require("./models/timeOut"));
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
-    default: obj
+    "default": obj
   };
 } // 处理promise和fetch的兼容性以及引入
 
@@ -31,15 +31,15 @@ window.recoFetch = function (url) {
 
   var timeout = option.timeout || null;
 
-  var _handleParams = (0, _handleParams2.default)(url, option),
+  var _handleParams = (0, _handleParams2["default"])(url, option),
       recoUrl = _handleParams.recoUrl,
       recoOptions = _handleParams.recoOptions;
 
-  return (0, _timeOut.default)(fetch(recoUrl, recoOptions), timeout);
+  return (0, _timeOut["default"])(fetch(recoUrl, recoOptions), timeout);
 };
 
 var _default = window.recoFetch;
-exports.default = _default;
+exports["default"] = _default;
 
 },{"./models/handleParams":2,"./models/timeOut":4,"es6-promise":6,"whatwg-fetch":8}],2:[function(require,module,exports){
 "use strict";
@@ -47,7 +47,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = _default;
+exports["default"] = _default;
 
 var _handleData = require("../../utils/handleData.js");
 
@@ -103,7 +103,7 @@ function _default(url, options) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = _default;
+exports["default"] = _default;
 
 var _handleData = require("../../utils/handleData.js");
 
@@ -123,7 +123,7 @@ function _default(fetchPromist) {
 
 
       resolve(response);
-    }).catch(function (error) {
+    })["catch"](function (error) {
       // 请求出错则报错 recoFetch Error: ***
       console.log('recoFetch Error:', error);
       reject({
@@ -140,13 +140,13 @@ function _default(fetchPromist) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = addTimeout;
+exports["default"] = addTimeout;
 
 var _handleResult = _interopRequireDefault(require("../handleResult/"));
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
-    default: obj
+    "default": obj
   };
 } // import { parseJSON } from '../../utils/handleData.js'
 // function parseJSON (response) {
@@ -163,7 +163,7 @@ function _interopRequireDefault(obj) {
 function addTimeout(fetchPromise, timeout) {
   // 如果timeout为null就返回请求本身
   if (timeout == null) {
-    return (0, _handleResult.default)(fetchPromise);
+    return (0, _handleResult["default"])(fetchPromise);
   }
 
   var timeoutFn = null; // 请求超时的Promise
@@ -181,7 +181,7 @@ function addTimeout(fetchPromise, timeout) {
   setTimeout(function () {
     timeoutFn();
   }, Number(timeout));
-  return (0, _handleResult.default)(racePromise);
+  return (0, _handleResult["default"])(racePromise);
 }
 
 },{"../handleResult/":3}],5:[function(require,module,exports){

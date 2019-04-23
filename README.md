@@ -1,4 +1,4 @@
-# reco-fetch
+# qishi-fetch
 
 ![es6-promise](https://img.shields.io/badge/es6--promise-4.2.5-brightgreen.svg)
 ![whatwg-fetch](https://img.shields.io/badge/whatwg--fetch-3.0.0-orange.svg)
@@ -11,7 +11,7 @@ Fetch for browser.
 $ npm isntall qishi-fetch
 ```
 
-## Including reco-fetch
+## Including qishi-fetch
 
 ### Script tag
 
@@ -22,7 +22,7 @@ $ npm isntall qishi-fetch
 ### Import
 
 ```javscript
-import recoFetch from 'reco-fetch'
+import qishiFetch from 'qishi-fetch'
 ```
 
 ## Config
