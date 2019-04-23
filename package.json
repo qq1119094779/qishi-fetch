@@ -1,0 +1,34 @@
+{
+  "name": "qishi-fetch",
+  "version": "1.0.0",
+  "description": "\"修改原本的fetch,再原基础上再次封装\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run qishi-fetch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qq1119094779/qishi-fetch.git"
+  },
+  "keywords": [
+    "fetch"
+  ],
+  "author": "qq1119094779",
+  "license": "ISC",
+  "dependencies": {
+    "es6-promise": "4.2.5",
+    "whatwg-fetch": "3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.1",
+    "minimist": "^1.2.0",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}
