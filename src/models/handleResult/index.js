@@ -26,7 +26,8 @@ export default function (fetchPromist) {
         console.log('recoFetch Error:', error)
         reject({
           status: 'error',
-          text: 'fetch error, maybe you can do something in catch'
+          text: 'fetch error, maybe you can do something in catch',
+          error: error
         })
       })
   })
